@@ -4,11 +4,7 @@ A MODERN, FULLY RESPONSIVE DEVELOPER PORTFOLIO BUILT USING **REACT + VITE + TYPE
 
 ---
 
-## 🌐 LIVE DEMO
 
-👉 https://harshtrivedi4480-cyber-harshtrivedi.vercel.app/
-
----
 
 ## 📌 ABOUT THE PROJECT
 
