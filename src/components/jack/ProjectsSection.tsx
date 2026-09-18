@@ -1,14 +1,15 @@
-import { useRef } from "react";
+﻿import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "./FadeIn";
 import { LiveProjectButton } from "./LiveProjectButton";
 import { VictoryGameShowcase } from "./VictoryGameShowcase";
 
-import projectPersonal from "@/assets/project-personal.jpg";
 import projectShowcase from "@/assets/game.png";
 import projectWeather from "@/assets/project-weather.png";
-import projectFilmlane from "@/assets/project-filmlane.jpg";
 import projectAroma from "@/assets/project-aroma.jpg";
+import projectUdaipur from "@/assets/project-udaipur.png";
+import projectCineVault from "@/assets/project-cinevault.png";
+import projectPersonal from "@/assets/project-personal.png";
 
 interface Project {
   n: string;
@@ -25,17 +26,42 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     n: "01",
+    category: "Full-Stack / Travel Platform",
+    name: "Udaipur Explorer",
+    description:
+      "A premium travel discovery platform for exploring Udaipur, featuring places, food, stays, experiences, hidden gems, stories, trip planning and an interactive map.",
+    stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Leaflet"],
+    image: projectUdaipur,
+    link: "https://udaipur-explorer.vercel.app/",
+    github:
+      "https://github.com/harshtrivedi4480-cyber/udaipur-explorer",
+  },
+  {
+    n: "02",
+    category: "Frontend / Movie Discovery",
+    name: "CineVault",
+    description:
+      "A responsive movie discovery web application built with React.js, featuring movie search, genre filtering, pagination and detailed movie information.",
+    stack: ["React", "JavaScript", "REST API", "CSS", "Responsive UI"],
+    image: projectCineVault,
+    link: "https://cinevault-by-harsh-trivedi.vercel.app/",
+    github:
+      "https://github.com/harshtrivedi4480-cyber/cinevault-harsh-trivedi",
+  },
+  {
+    n: "03",
     category: "Frontend / UI",
     name: "Personal Portfolio",
     description:
       "A modern developer portfolio focused on clean visual design, responsive layouts, smooth interactions and an immersive browsing experience.",
     stack: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-    image: projectPersonal,
+      image: projectPersonal,
+    
     link:
       "https://github.com/harshtrivedi4480-cyber/Harsh-Responsive-Portfolio-Experience",
   },
   {
-    n: "02",
+    n: "04",
     category: "Software / Java",
     name: "Java OOP Mini Projects",
     description:
@@ -46,7 +72,7 @@ const PROJECTS: Project[] = [
     special: "game",
   },
   {
-    n: "03",
+    n: "05",
     category: "Full-Stack / API",
     name: "Live Weather Observatory",
     description:
@@ -58,19 +84,7 @@ const PROJECTS: Project[] = [
       "https://github.com/harshtrivedi4480-cyber/live-weather-observatory",
   },
   {
-    n: "04",
-    category: "Frontend / Streaming UI",
-    name: "Filmlane Movie Website",
-    description:
-      "A cinematic movie discovery experience featuring responsive layouts, content sections, modern navigation and polished visual interactions.",
-    stack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    image: projectFilmlane,
-    link: "https://filmlane-movie-website-rust.vercel.app/",
-    github:
-      "https://github.com/harshtrivedi4480-cyber/filmlane-movie-website",
-  },
-  {
-    n: "05",
+    n: "06",
     category: "Web / Business",
     name: "Aroma Café",
     description:
@@ -606,9 +620,17 @@ export function ProjectsSection() {
             sm:text-[9px]
           "
         >
-          Design • Develop • Deploy
+          Design â€¢ Develop â€¢ Deploy
         </div>
       </FadeIn>
     </section>
   );
 }
+
+
+
+
+
+
+
+
